@@ -7,7 +7,7 @@ const add = (a: number, b: number) => {
 describe("test add function", () => {
   test("should return the sum of two numbers", () => {
     const result = add(2, 3);
-    expect(result).toBe(5);
+    expect(result).toBe(4);
   });
 
   test("should return zero when adding zero to a number", () => {
