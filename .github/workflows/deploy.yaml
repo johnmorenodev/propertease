@@ -39,8 +39,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Test
-        run: npm run test
   test:
     runs-on: ubuntu-latest
     name: Test
@@ -53,7 +51,9 @@ jobs:
 
       - name: Run test
         run: npm run test
+
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
