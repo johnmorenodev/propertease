@@ -46,7 +46,7 @@ jobs:
     name: Test
     steps:
       - name: Checkout code
-        uses: actions/@checkoutv3
+        uses: actions/checkout@v3
 
       - name: Install deps
         run: npm ci
