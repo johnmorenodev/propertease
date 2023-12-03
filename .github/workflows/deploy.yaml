@@ -1,7 +1,7 @@
 name: "Deploy"
 
 env:
-  DB_URL: ${{secrets.DB_URL}}
+  DATABASE_URL: ${{secrets.DATABASE_URL}}
 on:
   push:
     branches:
